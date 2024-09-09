@@ -1218,7 +1218,7 @@ def main(screen):
         cmd = batchexe('which') ['rocotorun']
         try:
             which_rocoto = runstr(cmd).strip()
-        except Exception,e:
+        except Exception(e):
             curses.endwin()
             print('\n\nCRITICAL ERROR: rocotorun is not in your path, user "module load rocoto"')
             sys.exit(0)
