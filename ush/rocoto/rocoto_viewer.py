@@ -215,7 +215,7 @@ def get_arguments():
         opts, args = getopt.getopt(sys.argv[1:], short_opts, long_opts)
     except getopt.GetoptError as err:
         print(str(err))
-        print
+        print("\n")
         usage('SCRIPT IS ABORTING DUE TO UNRECOGNIZED ARGUMENT')
 
     global save_checkfile_path
