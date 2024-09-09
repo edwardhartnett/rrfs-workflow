@@ -321,7 +321,7 @@ def get_aug_perf_values( username ):
     cmd = batchexe('which') ['bjobs']
     try:
         which_bjobs = runstr(cmd).strip()
-    except Exception,e:
+    except Exception(e):
         return None
     bjobs = collections.defaultdict(dict)
     aug_perf = collections.defaultdict(dict)
